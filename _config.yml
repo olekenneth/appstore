@@ -1,0 +1,18 @@
+title: App Store
+# email: no-reply@appstore.no
+description: >- # this means to ignore newlines until "baseurl:"
+  Look at all the apps! 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: UA-8420880-19
+
+collections:
+  apps:
+    sortby: title
+    output: true
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+

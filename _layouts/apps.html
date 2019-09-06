@@ -1,0 +1,82 @@
+---
+layout: default
+---
+<style type="text/css">
+  .screenshots {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+  }
+  .screenshots img {
+      max-height: 300px;
+      margin-right: 10px;
+  }
+  button#apple {
+      border-radius: 15px;
+      background: rgb(239,238,245);
+      border-width: 0;
+      padding: 5px 12px;
+      color: rgb(0,111,254);
+      font-weight: 500;
+      font-size: 25px;
+  }
+</style>
+{%- assign app = site.data.apps[page.slug] -%}
+<article class="post h-entry" itemscope itemtype="http://schema.org/MobileApplication">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">
+      <img src="{{ app.artworkUrl60}}" alt="{{ page.title}}s app icon">
+      {{ page.title | escape }}
+      <button id="apple" itemprop="installUrl" itemscope itemtype="http://schema.org/URL"><a itemprop="url" href="http://itunes.apple.com/app/id{{ page.app_id }}">GET</a></button>
+    </h1>
+    <p class="post-meta">
+      Version <span itemprop="softwareVersion">
+        {{ app.version }}
+      </span>
+      •
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ app.releaseDate | date: date_format }}
+      </time>
+      {%- if app.artistName -%}
+      • by <span itemprop="creator" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ app.artistName | escape }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content">
+    <div class="screenshots">
+      {% for screenshot in app.screenshotUrls %}
+      <img src="{{ screenshot }}">
+      {% endfor %}
+    </div>
+
+    <div itemprop="description">
+    {{ app.description | newline_to_br }}
+    </div>
+    <br>
+    <h3>Release notes</h3>
+    <div itemprop="releasenotes">
+      {{ app.releaseNotes | newline_to_br }}
+    </div>
+    <br>
+    <h3>Minimum OS version</h3>
+    <div itemprop="softwareRequirements">
+      {{ app.minimumOsVersion}}
+    </div>
+    <br>
+    <h3>Download in Apple App Store</h3>
+    <button id="apple"><a href="http://itunes.apple.com/app/id{{ page.app_id }}">GET</a></button>
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "MobileApplication",
+        "applicationCategory": "{{app.primaryGenreName}}",
+        "applicationSubCategory": "{{ app.genres[1] }}"
+        "screenshot": "{{ app.screenshotUrls[0]}}"
+    }
+  </script>
+</article>
