@@ -4,7 +4,7 @@ require 'json'
 search, = ARGV
 ARGV.clear
 
-url = "https://itunes.apple.com/search?term=#{search}&entity=software"
+url = "https://itunes.apple.com/search?country=NO&term=#{search}&entity=software"
 puts url
 uri = URI(url)
 response = Net::HTTP.get(uri)
@@ -23,7 +23,7 @@ for i in 0..data['results'].length - 1
     File.open("_apps/#{slug}.md", "w") {|f| f.write("---
 layout: apps
 slug: #{slug}
-title: #{name}
+title: '#{name}'
 store: apple
 app_id: #{id}
 ---
