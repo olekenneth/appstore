@@ -9,7 +9,7 @@ end
 puts ''
 
 def updateAppData(id)
-  url = "https://itunes.apple.com/lookup?id=#{id}"
+  url = "https://itunes.apple.com/lookup?country=no&id=#{id}"
   uri = URI(url)
   response = Net::HTTP.get(uri)
   data = JSON.parse(response)
@@ -20,12 +20,12 @@ def updateAppData(id)
     id = app['trackId']
     slug = name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
 
+    print '.'
     File.open("_data/apps/#{slug}.json", "w") {|f| f.write(app.to_json) }
   end
 end
 
 for filename in 0..apps.length - 1
   parsed = FrontMatterParser::Parser.parse_file(apps[filename])
-  print '.'
   updateAppData(parsed['app_id'])
 end
