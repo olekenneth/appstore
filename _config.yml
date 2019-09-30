@@ -10,6 +10,10 @@ collections:
   apps:
     sortby: title
     output: true
+    
+feed:
+  collections:
+    - apps
 
 # Build settings
 theme: minima
