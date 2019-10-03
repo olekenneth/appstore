@@ -2,6 +2,8 @@ require 'net/http'
 require 'json'
 require 'front_matter_parser'
 
+unsafe_loader = ->(string) { YAML.load(string) }
+
 apps = Dir["_apps/*.md"]
 apps.length.times do
   print '.'
@@ -26,6 +28,6 @@ def updateAppData(id)
 end
 
 for filename in 0..apps.length - 1
-  parsed = FrontMatterParser::Parser.parse_file(apps[filename])
+  parsed = FrontMatterParser::Parser.parse_file(apps[filename], loader: unsafe_loader)
   updateAppData(parsed['app_id'])
 end
