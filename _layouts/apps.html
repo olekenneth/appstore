@@ -38,7 +38,7 @@ layout: default
       •
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ app.releaseDate | date: date_format }}
+        {{ app.currentVersionReleaseDate | date: date_format }}
       </time>
       {%- if app.artistName -%}
       • by <span itemprop="creator" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ app.artistName | escape }}</span></span>
