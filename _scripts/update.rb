@@ -10,24 +10,33 @@ apps.length.times do
 end
 puts ''
 
-def updateAppData(id)
+def updateAppData(id, slug)
   url = "https://itunes.apple.com/lookup?country=no&id=#{id}"
   uri = URI(url)
-  response = Net::HTTP.get(uri)
-  data = JSON.parse(response)
+  #puts 'getting ' + url
+  response = Net::HTTP.get_response(uri)
+  if response.is_a?(Net::HTTPSuccess)
+    data = JSON.parse(response.body)
 
-  for i in 0..data['results'].length - 1
-    app = data['results'][i]
-    name = app['trackName']
-    id = app['trackId']
-    slug = name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+    for i in 0..data['results'].length - 1
+      app = data['results'][i]
+      id = app['trackId']
 
-    print '.'
-    File.open("_data/apps/#{slug}.json", "w") {|f| f.write(app.to_json) }
+      File.open("_data/apps/#{slug}.json", "w") {|f| f.write(app.to_json) }
+      print '.' # Everything is ok
+    end
+  else
+    print "-" # Error from API
   end
 end
 
 for filename in 0..apps.length - 1
-  parsed = FrontMatterParser::Parser.parse_file(apps[filename], loader: unsafe_loader)
-  updateAppData(parsed['app_id'])
+  begin
+    parsed = FrontMatterParser::Parser.parse_file(apps[filename], loader: unsafe_loader)
+    # puts parsed['slug']
+    updateAppData(parsed['app_id'], parsed['slug'])
+  rescue Exception => ex
+    puts 'filename: ' + apps[filename]
+    puts ex
+  end
 end
