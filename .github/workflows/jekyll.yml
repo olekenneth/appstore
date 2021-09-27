@@ -19,14 +19,15 @@ jobs:
           bundler-cache: true 
       - run: |
           ruby -v
-      - name: Build the site in the jekyll/builder container
-        run: |
-          date > test.txt
-          git config user.name github-actions
+          ruby _scripts/get-top-list.rb
+          ruby _scripts/update.rb
+          git config user.name AppStore bot
           git config user.email github-actions@github.com
           git add .
-          git commit -m "Commit generated file"
+          git commit -m "Commit generated files"
           git push
+      - name: Build the site in the jekyll/builder container
+        run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
