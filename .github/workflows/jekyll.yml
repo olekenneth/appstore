@@ -19,11 +19,11 @@ jobs:
           bundler-cache: true 
       - run: |
           ruby -v
-          ruby _scripts/get-top-list.rb
-          ruby _scripts/update.rb
+          bundle exec ruby _scripts/get-top-list.rb
+          bundle exec ruby _scripts/update.rb
           git config user.name AppStore bot
           git config user.email github-actions@github.com
-          git add .
+          git add _apps _data
           git commit -m "Commit generated files"
           git push
       - name: Build the site in the jekyll/builder container
