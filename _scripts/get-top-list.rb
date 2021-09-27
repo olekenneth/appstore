@@ -2,8 +2,7 @@ require 'net/http'
 require 'json'
 require './_scripts/search.rb'
 
-url = "https://rss.itunes.apple.com/api/v1/no/ios-apps/top-free/all/100/explicit.json"
-puts url
+url = "https://rss.itunes.apple.com/api/v1/no/ios-apps/top-free/all/10/explicit.json"
 uri = URI(url)
 response = Net::HTTP.get(uri)
 data = JSON.parse(response)['feed']

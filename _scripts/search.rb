@@ -3,7 +3,6 @@ require 'json'
 
 def search(search, force)
   url = "https://itunes.apple.com/search?country=NO&term=#{search}&entity=software"
-  puts url
   uri = URI(url)
   response = Net::HTTP.get_response(uri)
   if response.is_a?(Net::HTTPSuccess)
