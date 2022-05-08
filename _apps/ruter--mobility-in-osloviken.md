@@ -4,6 +4,6 @@ slug: ruter--mobility-in-osloviken
 title: "Ruter – Mobility in Oslo/Viken"
 store: apple
 app_id: 993620197
-date: 2022-04-21T07:50:59Z
+date: 2022-05-02T08:52:10Z
 published: 2015-09-01T08:59:16Z
 ---
