@@ -4,6 +4,6 @@ slug: mypostnord
 title: "mypostnord"
 store: apple
 app_id: 1534563432
-date: 2022-01-05T12:28:17Z
+date: 2022-06-01T07:07:15Z
 published: 2021-01-20T08:00:00Z
 ---
