@@ -3,7 +3,7 @@ layout: apps
 slug: bankid
 title: "BankID"
 store: apple
-app_id: 1463661615
-date: 2022-12-15T17:43:07Z
-published: 2019-11-20T08:00:00Z
+app_id: 1663237958
+date: 2023-02-07T08:24:43Z
+published: 2023-02-07T08:00:00Z
 ---
