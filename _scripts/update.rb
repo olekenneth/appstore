@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 require 'front_matter_parser'
 
-unsafe_loader = ->(string) { YAML.load(string) }
+unsafe_loader = ->(string) { YAML.unsafe_load(string) }
 
 apps = Dir["_apps/*.md"]
 apps.length.times do
