@@ -4,6 +4,6 @@ slug: google
 title: "Google"
 store: apple
 app_id: 284815942
-date: 2022-12-14T23:03:25Z
+date: 2023-03-02T19:13:29Z
 published: 2019-02-12T08:00:00Z
 ---

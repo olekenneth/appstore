@@ -4,6 +4,6 @@ slug: wolt-delivery-food-and-more
 title: "Wolt Delivery: Food and more"
 store: apple
 app_id: 943905271
-date: 2022-10-24T12:52:39Z
+date: 2023-02-21T15:10:54Z
 published: 2015-06-24T15:09:19Z
 ---

@@ -4,6 +4,6 @@ slug: whatsapp-messenger
 title: "WhatsApp Messenger"
 store: apple
 app_id: 310633997
-date: 2021-09-22T19:33:05Z
+date: 2023-02-17T18:42:50Z
 published: 2009-05-04T02:43:49Z
 ---
