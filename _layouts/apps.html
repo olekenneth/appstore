@@ -46,8 +46,21 @@ layout: default
     </h1>
     <p class="post-meta">
       Version <span itemprop="softwareVersion"> {{ app.version }} </span> •
-      Rating <b>{{ app.averageUserRatingForCurrentVersion | round }}</b> by {{
-      app.userRatingCountForCurrentVersion }} users •
+      <span
+        itemprop="aggregateRating"
+        itemscope
+        itemtype="https://schema.org/AggregateRating"
+      >
+        Rating
+        <b itemprop="ratingValue"
+          >{{ app.averageUserRatingForCurrentVersion | round }}</b
+        >
+        by
+        <span itemprop="ratingCount"
+          >{{ app.userRatingCountForCurrentVersion }}</span
+        >
+        users </span
+      >•
       <time
         class="dt-published"
         datetime="{{ page.date | date_to_xmlschema }}"
@@ -77,13 +90,28 @@ layout: default
       {% endfor %}
     </div>
 
-    <div itemprop="description">{{ app.description | newline_to_br }}</div>
-    <br />
+    <p itemprop="description">{{ app.description | newline_to_br }}</p>
     <h3>Release notes</h3>
-    <div itemprop="releasenotes">{{ app.releaseNotes | newline_to_br }}</div>
-    <br />
+
+    <p itemprop="releasenotes">{{ app.releaseNotes | newline_to_br }}</p>
+    <h3>Categories</h3>
+    <p>
+      <span itemprop="applicationCategory">{{ app.primaryGenreName }}</span>
+      &gt;
+      <span itemprop="applicationSubCategory">{{ app.genres[1] }}</span>
+    </p>
+
     <h3>Minimum OS version</h3>
-    <div itemprop="softwareRequirements">{{ app.minimumOsVersion}}</div>
+    <p>
+      <span itemprop="operatingSystem">iOS</span>
+      <span itemprop="softwareRequirements">{{ app.minimumOsVersion}}</span>
+    </p>
+
+    <h3>Price</h3>
+    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+      Free ($<span itemprop="price">0</span>)
+      <meta itemprop="priceCurrency" content="USD" />
+    </div>
     <br />
     <h3>Download in Apple App Store</h3>
     <button id="apple">
@@ -92,24 +120,4 @@ layout: default
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "MobileApplication",
-      "name": "{{ page.title | escape }}",
-      "applicationCategory": "{{ app.primaryGenreName }}",
-      "applicationSubCategory": "{{ app.genres[1] }}",
-      "screenshot": "{{ app.screenshotUrls[0]}}",
-      "operatingSystem": "iOS {{ app.minimumOsVersion }}+",
-      "offers": {
-        "@type": "Offer",
-        "price": "0"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "{{ app.averageUserRatingForCurrentVersion}}",
-        "ratingCount": "{{ app.userRatingCountForCurrentVersion }}"
-      }
-    }
-  </script>
 </article>
