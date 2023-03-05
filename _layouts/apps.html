@@ -96,6 +96,11 @@ layout: default
       "applicationCategory": "{{ app.primaryGenreName }}",
       "applicationSubCategory": "{{ app.genres[1] }}",
       "screenshot": "{{ app.screenshotUrls[0]}}",
+      "operatingSystem": "iOS {{ app.minimumOsVersion }}+",
+      "offers": {
+        "@type": "Offer",
+        "price": "0"
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "{{ app.averageUserRatingForCurrentVersion}}",
