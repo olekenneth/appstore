@@ -92,6 +92,7 @@ layout: default
     {
       "@context": "http://schema.org/",
       "@type": "MobileApplication",
+      "name": "{{ page.title | escape }}",
       "applicationCategory": "{{ app.primaryGenreName }}",
       "applicationSubCategory": "{{ app.genres[1] }}",
       "screenshot": "{{ app.screenshotUrls[0]}}",
