@@ -30,9 +30,9 @@ layout: default
   itemtype="http://schema.org/MobileApplication"
 >
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">
+    <h1 class="post-title p-name">
       <img src="{{ app.artworkUrl60}}" alt="{{ page.title}}s app icon" />
-      {{ page.title | escape }}
+      <span itemprop="name headline">{{ page.title | escape }}</span>
       <button
         id="apple"
         itemprop="installUrl"
@@ -57,7 +57,11 @@ layout: default
         -%} {{ app.currentVersionReleaseDate | date: date_format }}
       </time>
       {%- if app.artistName -%} • by
-      <span itemprop="creator" itemscope itemtype="http://schema.org/Person"
+      <span
+        itemprop="author"
+        itemprop="creator"
+        itemscope
+        itemtype="http://schema.org/Person"
         ><span class="p-author h-card" itemprop="name"
           >{{ app.artistName | escape }}</span
         ></span
@@ -69,7 +73,7 @@ layout: default
   <div class="post-content e-content">
     <div class="screenshots">
       {% for screenshot in app.screenshotUrls %}
-      <img src="{{ screenshot }}" />
+      <img itemprop="image" src="{{ screenshot }}" />
       {% endfor %}
     </div>
 
