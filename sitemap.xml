@@ -9,7 +9,7 @@ search: exclude
 {%- assign data = site.data.apps[app.slug] -%}
     <url>
         <loc>https://appstore.no{{ app.url }}</loc>
-        <lastmod>{{app.currentVersionReleaseDate | date: '%Y-%m-%d' }}</lastmod>
+        <lastmod>{{app.date | date: '%Y-%m-%d' }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
