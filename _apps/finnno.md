@@ -4,6 +4,6 @@ slug: finnno
 title: "FINN.no"
 store: apple
 app_id: 526541908
-date: 2023-04-24T10:54:00Z
+date: 2023-05-02T09:29:29Z
 published: 2012-05-22T00:11:15Z
 ---

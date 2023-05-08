@@ -4,6 +4,6 @@ slug: twitter
 title: "Twitter"
 store: apple
 app_id: 333903271
-date: 2021-09-20T16:00:07Z
+date: 2023-05-01T21:41:44Z
 published: 2009-10-09T19:50:00Z
 ---
