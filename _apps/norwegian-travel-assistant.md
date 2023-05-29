@@ -4,6 +4,6 @@ slug: norwegian-travel-assistant
 title: "Norwegian Travel Assistant"
 store: apple
 app_id: 534487502
-date: 2023-05-11T07:20:51Z
+date: 2023-05-24T07:05:41Z
 published: 2012-06-21T07:00:00Z
 ---
