@@ -4,6 +4,6 @@ slug: uber---request-a-ride
 title: "Uber - Request a ride"
 store: apple
 app_id: 368677368
-date: 2023-07-17T16:06:24Z
+date: 2023-07-24T14:14:23Z
 published: 2010-05-21T03:11:23Z
 ---

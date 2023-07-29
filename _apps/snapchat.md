@@ -4,6 +4,6 @@ slug: snapchat
 title: "Snapchat"
 store: apple
 app_id: 447188370
-date: 2022-04-04T11:01:06Z
+date: 2023-07-24T11:00:41Z
 published: 2011-07-13T23:51:40Z
 ---
