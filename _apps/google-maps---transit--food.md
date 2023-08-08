@@ -4,6 +4,6 @@ slug: google-maps---transit--food
 title: "Google Maps - Transit & Food"
 store: apple
 app_id: 585027354
-date: 2023-07-28T12:53:08Z
+date: 2023-08-04T04:49:48Z
 published: 2012-12-13T04:21:00Z
 ---
