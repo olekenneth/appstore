@@ -1,9 +1,9 @@
 ---
 layout: apps
 slug: vg
-title: 'VG'
+title: "VG"
 store: apple
 app_id: 381071021
-date: 2019-09-24T13:11:38Z
+date: 2023-09-26T12:56:26Z
 published: 2010-07-16T14:20:40Z
 ---
