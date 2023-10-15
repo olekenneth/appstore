@@ -4,6 +4,6 @@ slug: duolingo---language-lessons
 title: "Duolingo - Language Lessons"
 store: apple
 app_id: 570060128
-date: 2023-10-04T15:57:37Z
+date: 2023-10-09T18:13:39Z
 published: 2012-11-13T08:00:00Z
 ---
