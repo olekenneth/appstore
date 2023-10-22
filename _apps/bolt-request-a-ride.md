@@ -4,6 +4,6 @@ slug: bolt-request-a-ride
 title: "Bolt: Request a Ride"
 store: apple
 app_id: 675033630
-date: 2023-10-09T07:13:27Z
+date: 2023-10-16T07:15:22Z
 published: 2013-07-24T04:44:15Z
 ---
