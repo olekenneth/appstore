@@ -4,6 +4,6 @@ slug: uno-x
 title: "Uno-X"
 store: apple
 app_id: 1621614448
-date: 2023-10-23T11:57:00Z
+date: 2023-11-10T19:20:39Z
 published: 2023-06-06T07:00:00Z
 ---
