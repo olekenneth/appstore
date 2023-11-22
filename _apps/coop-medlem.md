@@ -4,6 +4,6 @@ slug: coop-medlem
 title: "Coop medlem"
 store: apple
 app_id: 992134528
-date: 2023-10-16T07:21:09Z
+date: 2023-11-17T07:45:26Z
 published: 2015-06-11T18:03:17Z
 ---
