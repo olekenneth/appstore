@@ -4,6 +4,6 @@ slug: airbnb
 title: "Airbnb"
 store: apple
 app_id: 401626263
-date: 2023-12-15T17:44:29Z
+date: 2024-01-11T19:24:06Z
 published: 2010-11-10T20:28:11Z
 ---
