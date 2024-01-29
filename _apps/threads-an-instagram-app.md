@@ -4,6 +4,6 @@ slug: threads-an-instagram-app
 title: "Threads, an Instagram app"
 store: apple
 app_id: 6446901002
-date: 2024-01-16T16:50:27Z
+date: 2024-01-25T23:01:36Z
 published: 2023-12-14T08:00:00Z
 ---
