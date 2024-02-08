@@ -4,6 +4,6 @@ slug: temu-shop-like-a-billionaire
 title: "Temu: Shop Like a Billionaire"
 store: apple
 app_id: 1641486558
-date: 2024-01-30T02:58:58Z
+date: 2024-02-07T04:50:13Z
 published: 2022-08-31T07:00:00Z
 ---
