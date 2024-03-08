@@ -4,6 +4,6 @@ slug: microsoft-teams
 title: "Microsoft Teams"
 store: apple
 app_id: 1113153706
-date: 2024-02-27T00:47:47Z
+date: 2024-03-06T17:06:43Z
 published: 2016-11-02T21:19:53Z
 ---
