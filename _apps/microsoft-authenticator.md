@@ -4,6 +4,6 @@ slug: microsoft-authenticator
 title: "Microsoft Authenticator"
 store: apple
 app_id: 983156458
-date: 2024-04-04T22:19:06Z
+date: 2024-04-24T13:16:06Z
 published: 2015-05-30T09:25:44Z
 ---
