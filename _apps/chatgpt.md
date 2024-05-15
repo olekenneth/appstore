@@ -4,6 +4,6 @@ slug: chatgpt
 title: "ChatGPT"
 store: apple
 app_id: 6448311069
-date: 2024-05-07T14:23:12Z
+date: 2024-05-14T17:54:39Z
 published: 2023-05-30T07:00:00Z
 ---
