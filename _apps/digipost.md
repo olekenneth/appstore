@@ -4,6 +4,6 @@ slug: digipost
 title: "Digipost"
 store: apple
 app_id: 441997544
-date: 2024-04-29T09:00:42Z
+date: 2024-05-15T06:12:32Z
 published: 2011-06-11T00:42:27Z
 ---
