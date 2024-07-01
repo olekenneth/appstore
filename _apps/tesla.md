@@ -4,6 +4,6 @@ slug: tesla
 title: "Tesla"
 store: apple
 app_id: 582007913
-date: 2024-03-14T06:41:56Z
+date: 2024-06-27T23:25:49Z
 published: 2013-11-26T16:27:35Z
 ---
