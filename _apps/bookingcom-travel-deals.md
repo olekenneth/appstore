@@ -4,6 +4,6 @@ slug: bookingcom-travel-deals
 title: "Booking.com Travel Deals"
 store: apple
 app_id: 367003839
-date: 2024-07-11T08:32:37Z
+date: 2024-07-18T09:37:27Z
 published: 2010-04-14T18:30:24Z
 ---
