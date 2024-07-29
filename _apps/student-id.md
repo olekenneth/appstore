@@ -1,9 +1,9 @@
 ---
 layout: apps
 slug: student-id
-title: "Student ID"
+title: "Student ID+"
 store: apple
-app_id: 890850138
-date: 2022-04-27T10:29:44Z
-published: 2014-07-01T07:00:00Z
+app_id: 6499433200
+date: 2024-06-03T14:37:37Z
+published: 2024-06-03T07:00:00Z
 ---
