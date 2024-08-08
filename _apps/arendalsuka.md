@@ -3,7 +3,7 @@ layout: apps
 slug: arendalsuka
 title: "Arendalsuka"
 store: apple
-app_id: 1575659835
-date: 2023-02-01T00:19:24Z
-published: 2021-07-08T07:00:00Z
+app_id: 6504055615
+date: 2024-06-14T04:35:38Z
+published: 2024-06-13T07:00:00Z
 ---
