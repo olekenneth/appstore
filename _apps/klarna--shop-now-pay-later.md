@@ -4,6 +4,6 @@ slug: klarna--shop-now-pay-later
 title: "Klarna | Shop now. Pay later."
 store: apple
 app_id: 1115120118
-date: 2024-10-14T07:50:17Z
+date: 2024-10-21T13:39:32Z
 published: 2016-06-22T13:33:00Z
 ---
