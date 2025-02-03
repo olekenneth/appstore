@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 require './_scripts/search.rb'
 
-url = "https://rss.applemarketingtools.com/api/v2/no/apps/top-free/30/apps.json"
+url = "https://rss.marketingtools.apple.com/api/v2/no/apps/top-free/30/apps.json"
 uri = URI(url)
 response = Net::HTTP.get(uri)
 data = JSON.parse(response)['feed']
