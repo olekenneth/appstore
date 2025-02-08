@@ -4,6 +4,6 @@ slug: hudd
 title: "Hudd"
 store: apple
 app_id: 6503947586
-date: 2025-01-14T12:40:59Z
+date: 2025-02-04T13:40:59Z
 published: 2024-11-05T08:00:00Z
 ---

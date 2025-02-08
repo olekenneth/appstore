@@ -4,6 +4,6 @@ slug: posten
 title: "Posten"
 store: apple
 app_id: 370370047
-date: 2025-01-27T19:53:29Z
+date: 2025-02-03T20:57:21Z
 published: 2010-08-31T07:00:00Z
 ---
