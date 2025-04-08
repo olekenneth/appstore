@@ -4,6 +4,6 @@ slug: bambusa
 title: "Bambusa"
 store: apple
 app_id: 6446125225
-date: 2024-05-07T10:56:55Z
+date: 2025-04-02T16:33:21Z
 published: 2023-04-23T07:00:00Z
 ---
