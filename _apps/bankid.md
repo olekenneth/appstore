@@ -4,6 +4,6 @@ slug: bankid
 title: "BankID"
 store: apple
 app_id: 1663237958
-date: 2025-04-23T17:22:46Z
+date: 2025-04-30T20:03:17Z
 published: 2023-02-07T08:00:00Z
 ---
