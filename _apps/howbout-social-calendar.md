@@ -1,9 +1,9 @@
 ---
 layout: apps
 slug: howbout-social-calendar
-title: "Howbout: Social calendar"
+title: "Howbout: social calendar"
 store: apple
 app_id: 1477248221
-date: 2023-10-02T17:24:14Z
+date: 2025-05-22T08:13:19Z
 published: 2019-11-30T08:00:00Z
 ---
