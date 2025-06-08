@@ -4,6 +4,6 @@ slug: foodora-food--groceries
 title: "foodora: Food & Groceries"
 store: apple
 app_id: 421369701
-date: 2025-05-28T19:29:34Z
+date: 2025-06-04T13:36:49Z
 published: 2011-03-09T17:00:27Z
 ---
