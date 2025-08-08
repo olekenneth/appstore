@@ -4,6 +4,6 @@ slug: google---more-ways-to-search
 title: "Google - More ways to search"
 store: apple
 app_id: 284815942
-date: 2025-07-28T00:05:01Z
+date: 2025-08-04T00:07:45Z
 published: 2019-02-12T08:00:00Z
 ---
