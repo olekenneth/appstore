@@ -3,7 +3,7 @@ layout: apps
 slug: itslearning
 title: "itslearning"
 store: apple
-app_id: 951619066
-date: 2023-03-14T15:33:49Z
-published: 2014-12-30T12:29:41Z
+app_id: 1640277495
+date: 2025-06-04T06:23:43Z
+published: 2024-10-11T07:00:00Z
 ---
