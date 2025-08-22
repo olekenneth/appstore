@@ -4,6 +4,6 @@ slug: kiwi-pluss
 title: "KIWI PLUSS"
 store: apple
 app_id: 1490566409
-date: 2025-04-09T19:51:31Z
+date: 2025-08-21T07:41:51Z
 published: 2020-01-02T08:00:00Z
 ---

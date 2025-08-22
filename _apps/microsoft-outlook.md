@@ -4,6 +4,6 @@ slug: microsoft-outlook
 title: "Microsoft Outlook"
 store: apple
 app_id: 951937596
-date: 2025-08-11T20:25:14Z
+date: 2025-08-18T21:06:26Z
 published: 2015-01-29T05:22:59Z
 ---
