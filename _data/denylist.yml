@@ -1,0 +1,28 @@
+# Denylist for apps that should NOT be added to appstore.no.
+#
+# When _scripts/search.rb finds an app whose bundle id, artist (developer) id,
+# or artist (developer) name matches one of the lists below, the app is skipped
+# and no _apps/<slug>.md file is written.
+#
+# Matching rules:
+#   bundle_ids   - matched against app "bundleId"   (exact, case-insensitive)
+#   artist_ids   - matched against app "artistId"   (exact)
+#   artist_names - matched against app "artistName" (exact, case-insensitive)
+#
+# You normally only need ONE matching entry per app.
+#
+# IMPORTANT: This only PREVENTS NEW additions. It does NOT remove apps that are
+# already in the repo. To remove an app that is already listed, see AGENTS.md
+# -> "Remove an app that is already listed".
+
+# Example:
+# bundle_ids:
+#   - com.example.badapp
+# artist_ids:
+#   - 123456789
+# artist_names:
+#   - "Eksempel Studio AS"
+
+bundle_ids: []
+artist_ids: []
+artist_names: []

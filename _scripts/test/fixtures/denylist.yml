@@ -1,0 +1,7 @@
+# Fixture used by _scripts/test/denylist_test.rb. Not used by the site.
+bundle_ids:
+  - com.example.badapp
+artist_ids:
+  - 123456789
+artist_names:
+  - "Eksempel Studio AS"

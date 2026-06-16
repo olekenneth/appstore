@@ -1,5 +1,6 @@
 require 'net/http'
 require 'json'
+require_relative 'denylist'
 
 def search(search, force)
   url = "https://itunes.apple.com/search?country=NO&term=#{search}&entity=software"
@@ -10,6 +11,12 @@ def search(search, force)
 
     for i in 0..data['results'].length - 1
       app = data['results'][i]
+
+      if (reason = denied?(app))
+        puts "Skipping denied app (#{reason}): #{app['trackName']}"
+        next
+      end
+
       name = app['trackName'].to_json
       id = app['trackId']
       date = app['currentVersionReleaseDate']
