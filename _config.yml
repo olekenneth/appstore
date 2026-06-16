@@ -20,3 +20,17 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Files to exclude from the built site (not published).
+# Re-includes Jekyll's defaults since this key overrides them.
+exclude:
+  - AGENTS.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
+
