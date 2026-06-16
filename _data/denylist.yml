@@ -24,5 +24,9 @@
 #   - "Eksempel Studio AS"
 
 bundle_ids: []
-artist_ids: []
-artist_names: []
+
+artist_ids:
+  - 589794874          # Norsk Rikstoto (Stiftelsen Norsk Rikstoto)
+
+artist_names:
+  - "Norsk Rikstoto"
