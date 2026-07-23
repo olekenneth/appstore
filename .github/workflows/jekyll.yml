@@ -26,8 +26,5 @@ jobs:
           git add _apps _data
           git commit -m "Commit generated files"
           git push
-      - name: Build the site in the jekyll/builder container
-        run: |
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+      - name: Build the site with Jekyll
+        run: bundle exec jekyll build --future
